@@ -4,24 +4,40 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 768px){
+  section.section-padding{
+    padding: 4rem 4rem 0 !important;
+  }
+  html{
+    font-size: 90%;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 500px){
+  html{
+    font-size: 85%;
+  }
+  section.section-padding{
+    padding: 3rem 2rem 0 !important;
+  }
 }
+@media (max-width: 400px){
+  html{
+    font-size: 81%;
+  }
+}
+@media (max-width: 375px){
+  html{
+    font-size: 71%;
+  }
+}
+/* body{
+  padding: 10rem 9% 2rem;
+} */
+/* tailwind: bg-[linear-gradient(93deg,_#cc186e_-7%,#8b1717_146%)] */
