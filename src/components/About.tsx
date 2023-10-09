@@ -1,10 +1,14 @@
-import Image from "next/image"
-
+import { FloatSection } from "./FloatSection";
+/* 'use client' */
+import Image from "next/image";
+/* import { Button } from "@mui/material";
+import { useState } from "react";
+ */
 export default function About() {
+    /* const [readMore, setReadMore] = useState(false); */
+
     return (
-        <section
-            className="rounded-lg shadow-[0px_16px_50px_0px_rgba(38,_38,_38,_0.4)] bg-white absolute flex flex-col justify-center gap-8 items-start px-20 py-8 max-xl:px-12 max-xl:py-6 max-lg:gap-5 max-sm:items-center "
-        >
+        <FloatSection>
             <div className="text-3xl font-semibold tracking-[0.84] leading-[34.3px] text-[#251d1d]">
                 Sobre Mim
             </div>
@@ -22,14 +26,18 @@ export default function About() {
                         Na SulDepila&Bronze, a excelência é a nossa norma. Utilizamos as
                         técnicas mais avançadas e produtos de alta qualidade para garantir
                         resultados impecáveis. Somos sua parceira de confiança na busca pela
-                        sua melhor versão.
+                        sua melhor versão. 
+                        {/* <Button color="secondary" onClick={() => setReadMore(!readMore)}>{!readMore ? "Ler mais" : "Ler menos"}</Button> */}
                     </p>
-                    <p>
-                        O que está esperando? Confira já nossos serviços e marque seu
-                        horario conosco. Te aguardo!{" "}
-                    </p>
+                    {/* {readMore &&( */}
+                        <p>
+                            O que está esperando? Confira já nossos serviços e marque seu
+                            horario conosco. Te aguardo!{" "}
+                        </p>
+{/*                     )
+                    } */}
                 </aside>
             </div>
-        </section>
+        </FloatSection>
     )
 }
