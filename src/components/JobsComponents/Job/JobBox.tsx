@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-export const Job = ({src, children}: {src: string, children: ReactNode}) => {
+export const JobBox = ({src, children}: {src: string, children: ReactNode}) => {
     return (
         <div className="flex flex-col place-items-center">
             <img
