@@ -1,7 +1,6 @@
 import Button from '@mui/material/Button';
 import About from './About';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { SocialMedia } from './SocialMedia';
 
 export default function HomeScreen() {
     return (
@@ -14,12 +13,7 @@ export default function HomeScreen() {
                     <h1 className='text-pink-700 text-6xl max-lg:text-5xl font-bold max-sm:text-[2.52rem] pr-4'>SulDepilla&Bronze</h1>
                     <p className='text-justify '>Olá! Seja bem vindo(a). Eu sou a Suely, e serei a sua atendente aqui na SulDepilla&Bronze. Somos uma empresa voltada a estetica, com diversos tipos de serviços. Confira o nosso trabalho.</p>
                     <div className='inline-flex gap-1'>
-                        <a href="" target='_blank'>
-                            <WhatsAppIcon sx={{ color: "#25D366" }} fontSize='large' className='cursor-pointer' />
-                        </a>
-                        <a target='_blank' href="https://www.instagram.com/suldepillaebronze/">
-                            <InstagramIcon sx={{ color: "#cd486b" }} fontSize='large' className='cursor-pointer' />
-                        </a>
+                        <SocialMedia names={true} />
                     </div>
                     <div>
                         <Button

@@ -13,14 +13,13 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-
+import { SocialMedia } from './SocialMedia';
 interface Props {
     window?: () => Window;
 }
 
-const drawerWidth = 240;
-const navItems = ['Inicio', 'Serviços', 'Trabalhos','Certificados'];
+const drawerWidth = 260;
+const navItems = ['Inicio', 'Serviços', 'Trabalhos', 'Certificados'];
 
 export default function DrawerAppBar(props: Props) {
     const { window } = props;
@@ -32,22 +31,32 @@ export default function DrawerAppBar(props: Props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-{/*             <div className='flex'>
-                <img src="./logomarca_suely.png" alt="" /> */}
-                <Typography variant="h6" sx={{ my: 2 }} >
-                    SulDepilla&Bronze
-                </Typography>
-            {/* </div> */}
+            <Typography variant="h6" sx={{ my: 2 }} >
+                SulDepilla&Bronze
+            </Typography>
             <Divider />
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                            <ListItemText>
+                                <a href={`#${item}`}>
+                                    {item}
+                                </a>
+                            </ListItemText>
                         </ListItemButton>
                     </ListItem>
                 ))}
             </List>
+            <Divider />
+            <Box sx={{margin: "0.4rem 0"}}>
+                <Typography variant='overline' fontSize={'small'}>
+                    Contatos
+                </Typography>
+                <Box className="flex justify-center gap-2" >
+                    <SocialMedia names={true} />
+                </Box>
+            </Box>
         </Box>
     );
 
@@ -57,34 +66,30 @@ export default function DrawerAppBar(props: Props) {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar component="nav" className='bg-[linear-gradient(93deg,_#cc186e_-7%,#8b1717_146%)]'>
-                <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    {/* <div className='inline-flex gap-4 items-center'> */}
+                <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <Box>
                         <Typography
                             variant="h6"
                             component="div"
                             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                         >
-                            <div className='flex items-center gap-2'>
-                                <img src="./logomarca_suely_branca.png" alt="logo_marca" className='w-10'/>
-                                SulDepilla&Bronze   
+                            <div>
+                                <a href="#Inicio" className='flex items-center gap-2 cursor-pointer'>
+                                    <img src="./logomarca_suely_branca.png" alt="logo_marca" className='w-10' />
+                                    SulDepilla&Bronze
+                                </a>
                             </div>
                         </Typography>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        {navItems.map((item) => (
-                            <Button key={item} sx={{ color: '#fff' }} href={`#${item}`} >
-                                {item}
-                            </Button>
-                        ))}
                     </Box>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        sx={{ mr: 2}}
+                    >
+                        <MenuIcon />
+                    </IconButton>
                 </Toolbar>
             </AppBar>
             <nav>
@@ -97,14 +102,13 @@ export default function DrawerAppBar(props: Props) {
                         keepMounted: true, // Better open performance on mobile.
                     }}
                     sx={{
-                        display: { xs: 'block', sm: 'none' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                 >
                     {drawer}
                 </Drawer>
             </nav>
-            <Box component="main" sx={{ p: 2 }}>
+            <Box component="main" sx={{ p: 3 }}>
             </Box>
         </Box>
     );
