@@ -2,7 +2,10 @@ import { Certification } from "./Certification"
 
 export default function Certifications() {
     return (
-        <section className="flex flex-col mx-24 px-6 max-xl:mx-20 max-lg:mx-4 max-sm:px-2">
+        <section
+            id="Certificados"
+            className="flex flex-col mx-24 px-6 max-xl:mx-20 max-lg:mx-4 max-sm:px-2"
+        >
             <div className="flex flex-row justify-between items-start mb-10">
                 <div className="text-3xl  font-semibold tracking-[0.84]">
                     MINHAS CERTIFICAÇÕES

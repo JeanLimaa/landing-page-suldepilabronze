@@ -6,9 +6,9 @@ export const JobBox = ({src, children}: {src: string, children: ReactNode}) => {
             <img
                 src={src}
                 alt="meus serviços"
-                className="rounded"
+                className="rounded max-lg:w-64 max-md:w-full"
             />
-            <div className="flex gap-4">
+            <div className="flex gap-4 max-sm:gap-2">
                 <img
                     src="https://file.rendit.io/n/HWJcOWsKyM8w9DhpmCyB.svg"
                     alt="check circle"

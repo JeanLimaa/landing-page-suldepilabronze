@@ -2,7 +2,10 @@ import Service from "./Service"
 
 export default function Services() {
     return (
-        <section className="bg-[linear-gradient(93deg,_#a9145b_-7%,#161315_71%,#db2c80_146%)] bg-cover bg-blend-normal bg-no-repeat flex flex-col justify-center mb-[146px] py-16">
+        <section
+            id="Serviços"
+            className="bg-[linear-gradient(93deg,_#a9145b_-7%,#161315_71%,#db2c80_146%)] bg-cover bg-blend-normal bg-no-repeat flex flex-col justify-center mb-[146px] py-16"
+        >
             <div className="bg-white flex flex-row justify-center gap-8 p-9 max-xl:flex-col items-center max-sm:p-3" >
                 <div className="self-start flex flex-col mt-24 gap-4 items-start w-[30vw] pr-16 max-xl:w-full max-lg:pr-0">
                     <div className="text-lg tracking-[0.9] text-[#ac1742]">

@@ -26,7 +26,7 @@ export function CustomTabPanel(props: TabPanelProps) {
             {...other}
         >
             {value === index && (
-                <Box sx={{ p: 3 }}>
+                <Box sx={{ p: 2 }} >
                     <JobContainer>{children}</JobContainer>
                 </Box>
             )}
@@ -55,7 +55,7 @@ export default function TabsMain() {
         <>
             <Box sx={{ width: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" textColor='secondary' indicatorColor='secondary'>
+                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" textColor='secondary' indicatorColor='secondary' >
                         <Tab label="Bronzeamento" {...a11yProps(0)} />
                         <Tab label="Depilação" {...a11yProps(1)} />
                         <Tab label="Limpeza de pele" {...a11yProps(2)} />

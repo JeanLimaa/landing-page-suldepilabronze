@@ -23,9 +23,18 @@ export const RenderImagesTab = ({ index, currentPage, currentCategoryUrls, value
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 1280) setItemsPerPage(3);
-            else setItemsPerPage(4);
+            if (window.innerWidth <= 360) {
+                setItemsPerPage(1);
+              } else if (window.innerWidth <= 768) {
+                setItemsPerPage(2);
+              } else if (window.innerWidth <= 1280) {
+                setItemsPerPage(3);
+              } else {
+                setItemsPerPage(4);
+              }
+
         };
+
 
         window.addEventListener('resize', handleResize);
 
@@ -37,7 +46,7 @@ export const RenderImagesTab = ({ index, currentPage, currentCategoryUrls, value
     }, []);
 
     return (
-        <CustomTabPanel value={value} index={index}>
+        <CustomTabPanel value={value} index={index} >
             {currentCategoryUrls().slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((job, index) => (
                 <JobBox key={index} src={job.image}>
                     {job.jobName}
