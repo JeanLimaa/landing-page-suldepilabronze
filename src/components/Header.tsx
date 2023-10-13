@@ -14,12 +14,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { SocialMedia } from './SocialMedia';
+import Image from 'next/image';
+
 interface Props {
     window?: () => Window;
 }
 
 const drawerWidth = 260;
-const navItems = ['Inicio', 'Serviços', 'Trabalhos', 'Certificados'];
+const navItems = ['Inicio', 'Sobre', 'Serviços', 'Trabalhos', 'Certificados'];
 
 export default function DrawerAppBar(props: Props) {
     const { window } = props;
@@ -31,7 +33,8 @@ export default function DrawerAppBar(props: Props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }} >
+            <Typography variant="h6" sx={{ my: 2 }} className='flex flex-col items-center'>
+                <Image width={100} height={100} src="/logomarca_suely.png" alt="logo_marca" className='w-14' />
                 SulDepilla&Bronze
             </Typography>
             <Divider />
@@ -75,7 +78,7 @@ export default function DrawerAppBar(props: Props) {
                         >
                             <div>
                                 <a href="#Inicio" className='flex items-center gap-2 cursor-pointer'>
-                                    <img src="./logomarca_suely_branca.png" alt="logo_marca" className='w-10' />
+                                    <Image width={100} height={100} src="/logomarca_suely_branca.png" alt="logo_marca" className='w-10' />
                                     SulDepilla&Bronze
                                 </a>
                             </div>

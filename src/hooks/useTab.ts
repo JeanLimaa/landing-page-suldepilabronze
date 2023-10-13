@@ -1,13 +1,5 @@
 import { BronzeUrls, DepilUrls, LimpezaUrls } from '../components/JobsComponents/Job/JobsDatabase';
-import { ChangeEvent, useEffect, useRef, useState } from 'react';
-import React from 'react';
-
-interface RenderImagesTabProps {
-    index: number,
-    value: number,
-    setCurrentPage: React.Dispatch<React.SetStateAction<number>>,
-    currentPage: number,
-}
+import { SyntheticEvent, ChangeEvent, useEffect, useRef, useState } from 'react';
 
 export const useTab = () => {
     const [itemsPerPage, setItemsPerPage] = useState(4);
@@ -15,11 +7,11 @@ export const useTab = () => {
     const [value, setValue] = useState(0); 
     const isMounted = useRef(true)
 
-    const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
+    const handlePageChange = (event: ChangeEvent<unknown>, page: number) => {
         setCurrentPage(page);
     };
 
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (event: SyntheticEvent, newValue: number) => {
         setValue(newValue);
         setCurrentPage(1);
     };  

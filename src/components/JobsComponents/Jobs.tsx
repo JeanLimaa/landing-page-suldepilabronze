@@ -12,12 +12,11 @@ export default function Jobs() {
             </div>
             <TabsMain />
             <button
-                id="CTAButton"
-                className="border-solid border-[#ac1742] flex flex-col justify-center h-16 shrink-0 items-center border-2"
+                className="hover:bg-rose-600 hover:text-white text-[#ac1742] transition-all ease-in-out duration-500 border-solid border-[#ac1742] flex flex-col justify-center h-16 shrink-0 items-center border-2"
             >
-                <div className="text-center text-lg font-semibold text-[#ac1742] mx-16">
+                <a className="text-center text-lg font-semibold  mx-16" target="_blank" href="https://client.tuaagenda.com/c/Suldepilla&bronze">
                     Agende agora
-                </div>
+                </a>
             </button>
         </section>
     )

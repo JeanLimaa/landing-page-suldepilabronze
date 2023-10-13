@@ -4,7 +4,7 @@ export default function Certifications() {
     return (
         <section
             id="Certificados"
-            className="flex flex-col mx-24 px-6 max-xl:mx-20 max-lg:mx-4 max-sm:px-2"
+            className="flex flex-col mx-24 px-6 max-xl:mx-20 max-lg:mx-4 max-sm:px-2 pb-32"
         >
             <div className="flex flex-row justify-between items-start mb-10">
                 <div className="text-3xl  font-semibold tracking-[0.84]">
