@@ -86,7 +86,7 @@ export default function ServicesTable({bronze, depil, limpeza}: ServicesTablePro
                 <TableFooter>
                     <TableRow>
                         <TablePagination
-                            rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
+                            rowsPerPageOptions={[5, 10, 25, { label: 'Tudo', value: -1 }]}
                             colSpan={3}
                             count={rows.length}
                             rowsPerPage={rowsPerPage}
@@ -103,7 +103,7 @@ export default function ServicesTable({bronze, depil, limpeza}: ServicesTablePro
                         />
                     </TableRow>
                 </TableFooter>
-            </Table>
+            </Table>    
         </TableContainer>
     );
 }

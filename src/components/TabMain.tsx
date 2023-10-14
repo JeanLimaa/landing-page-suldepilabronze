@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { ReactNode } from 'react';
+import { useMediaQuery } from "@mui/material";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -13,6 +14,7 @@ interface TabPanelProps {
 
 export function CustomTabPanel(props: TabPanelProps) {
     const { children, value, index, ...other } = props;
+    const isMobile = useMediaQuery("(max-width:510px)");
 
     return (
         <div
@@ -23,7 +25,7 @@ export function CustomTabPanel(props: TabPanelProps) {
             {...other}
         >
             {value === index && (
-                <Box sx={{ p: 2 }} >
+                <Box sx={{ p: isMobile ? 0.5 : 2 }} >
                     <div>{children}</div>
                 </Box>
             )}

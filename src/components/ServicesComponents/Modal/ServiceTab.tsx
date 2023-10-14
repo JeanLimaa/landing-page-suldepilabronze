@@ -1,7 +1,7 @@
 'use client'
 import * as React from 'react';
 import { useTab } from '@/hooks/useTab';
-import ServicesTable from './Table/ServicesTable';
+import ServicesTable from '../Table/ServicesTable';
 import TabsMain, { CustomTabPanel } from '@/components/TabMain';
 
 export default function TabsService() {
