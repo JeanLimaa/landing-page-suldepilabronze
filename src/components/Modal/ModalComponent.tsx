@@ -20,8 +20,8 @@ interface ModalComponentProps {
   children: ReactNode,
   btnText: string,
   btnClassName?: string,
-  btnVariant?: string,
-  btnColor?: string
+  btnColor?: 'error',
+  btnVariant: 'contained' | 'outlined'
 }
 export default function ModalComponent({ children, btnText, btnClassName, btnVariant, btnColor }: ModalComponentProps) {
   const [open, setOpen] = useState(false);
@@ -32,7 +32,8 @@ export default function ModalComponent({ children, btnText, btnClassName, btnVar
     <div>
       <Button
         onClick={handleOpen}
-        variant='outlined'
+        variant={btnVariant}
+        color={btnColor}
         className={btnClassName}
       >
         {btnText}

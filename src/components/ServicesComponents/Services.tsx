@@ -1,6 +1,5 @@
 import Service from "./Service"
 import ServicesModal from "./Modal/ServicesModal"
-import ServicesTable from "./Modal/Table/ServicesTable"
 
 export default function Services() {
     return (
@@ -21,7 +20,7 @@ export default function Services() {
                         interdum ante purus gravida.
                     </div>
                     <div className="text-justify text-lg underline font-semibold tracking-[0.36] text-[#ac1742]">
-                    <ServicesModal />
+                        <ServicesModal />
                     </div>
                 </div>
                 <aside className="grid gap-5 grid-cols-3 max-xl:mb-10 justify-between max-lg:gap-20 max-md:grid-cols-2 max-md:mb-4 max-[375px]:grid-cols-1 items-center">

@@ -40,19 +40,19 @@ export default function DrawerAppBar(props: Props) {
             <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText>
-                                <a href={`#${item}`}>
+                    <a href={`#${item}`}>
+                        <ListItem key={item} disablePadding>
+                            <ListItemButton sx={{ textAlign: 'center' }}>
+                                <ListItemText>
                                     {item}
-                                </a>
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
+                                </ListItemText>
+                            </ListItemButton>
+                        </ListItem>
+                    </a>
                 ))}
             </List>
             <Divider />
-            <Box sx={{margin: "0.4rem 0"}}>
+            <Box sx={{ margin: "0.4rem 0" }}>
                 <Typography variant='overline' fontSize={'small'}>
                     Contatos
                 </Typography>
@@ -89,7 +89,7 @@ export default function DrawerAppBar(props: Props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2}}
+                        sx={{ mr: 2 }}
                     >
                         <MenuIcon />
                     </IconButton>

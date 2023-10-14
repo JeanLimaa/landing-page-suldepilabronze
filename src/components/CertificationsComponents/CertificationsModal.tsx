@@ -32,6 +32,8 @@ export function CertificationsModal() {
     <ModalComponent
       btnText='Ver mais'
       btnClassName='font-semibold text-[#ac1742] border-[#ac1742]'
+      btnVariant='outlined'
+      btnColor="error"
     >
       <TitlebarBelowImageList />
     </ModalComponent>

@@ -10,13 +10,13 @@ export default function Jobs() {
                 COMO É O MEU TRABALHO?
             </div>
             <JobsTabs />
-            <button
-                className="hover:bg-rose-600 hover:text-white text-[#ac1742] transition-all ease-in-out duration-500 border-solid border-[#ac1742] flex flex-col justify-center h-16 shrink-0 items-center border-2"
+             <a
+                className="text-center text-lg font-semibold px-16 hover:bg-rose-700 hover:text-white text-[#ac1742] transition-all ease-in-out duration-500 border-solid border-[#ac1742] flex flex-col justify-center h-16 shrink-0 items-center border-2"
+                target="_blank"
+                href="https://client.tuaagenda.com/c/Suldepilla&bronze"
             >
-                <a className="text-center text-lg font-semibold  mx-16" target="_blank" href="https://client.tuaagenda.com/c/Suldepilla&bronze">
                     Agende agora
-                </a>
-            </button>
+            </a> 
         </section>
     )
 }
