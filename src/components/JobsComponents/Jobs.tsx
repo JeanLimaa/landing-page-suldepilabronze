@@ -1,5 +1,4 @@
-import Pagination from "@mui/material/Pagination";
-import TabsMain from "./Tabs/Tabs";
+import JobsTabs from "./Tabs/Tabs";
 
 export default function Jobs() {
     return (
@@ -10,7 +9,7 @@ export default function Jobs() {
             <div className="text-xl font-semibold tracking-[0.9] text-[#ac1742] mb-px">
                 COMO É O MEU TRABALHO?
             </div>
-            <TabsMain />
+            <JobsTabs />
             <button
                 className="hover:bg-rose-600 hover:text-white text-[#ac1742] transition-all ease-in-out duration-500 border-solid border-[#ac1742] flex flex-col justify-center h-16 shrink-0 items-center border-2"
             >

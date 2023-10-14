@@ -1,3 +1,4 @@
+import { CertificationsModal } from "./CertificationsModal"
 import { Certification } from "./Certification"
 
 export default function Certifications() {
@@ -10,8 +11,8 @@ export default function Certifications() {
                 <div className="text-3xl  font-semibold tracking-[0.84]">
                     MINHAS CERTIFICAÇÕES
                 </div>
-                <div className="text-justify text-lg  font-semibold tracking-[0.36] text-[#ac1742] self-end">
-                    Ver mais
+                <div className="text-justify  self-end">
+                    <CertificationsModal />
                 </div>
             </div>
             <div className="flex justify-center max-[2000px]:grid max-[2000px]:grid-cols-4 justify-items-center gap-8 mb-1 max-xl:grid-cols-3 max-sm:grid-cols-2">
