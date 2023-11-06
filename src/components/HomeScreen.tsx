@@ -12,7 +12,7 @@ const HomeScreen = () => {
             >
                 <article className='justify-center flex flex-col max-w-[40vw] max-md:min-w-full gap-4'>
                     <h1 className='text-pink-700 text-6xl max-lg:text-5xl font-bold max-sm:text-[2.52rem] pr-4'>SulDepilla&Bronze</h1>
-                    <p className='text-justify '>Olá! Seja bem vindo(a). Eu sou a Suely, e serei a sua atendente aqui na SulDepilla&Bronze. Somos uma empresa voltada a estetica, com diversos tipos de serviços. Confira o nosso trabalho.</p>
+                    <p className='text-justify '>Olá, seja bem vindo(a)! Eu sou a Suely, sua atendente na SulDepilla&Bronze. Somos uma empresa dedicada à estética e oferecemos diversos serviços de qualidade. Confira o que temos a oferecer!</p>
                     <div className='inline-flex gap-1'>
                         <SocialMedia names={true} />
                     </div>
@@ -36,7 +36,7 @@ const HomeScreen = () => {
                     <About />
                 </div>
             </section>
-            <section className="min-h-[50vh] max-sm:min-h-[700px] max-[475px]:min-h-[600px]"></section>
+            <section className="min-h-[470px] max-md:min-h-[340px] max-sm:min-h-[700px] max-[375px]:min-h-[600px]"></section>
         </>
     )
 }
