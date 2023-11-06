@@ -25,8 +25,7 @@ export default function Service({children, src, serviceName}: ServiceProps){
                 </div>
                 <div className="text-justify tracking-[0.32] text-[#535151] w-full">
                     <p>
-                        {children}  
-                        {/* <span className="text-[#ac1742] contents"> Saiba mais.</span> */}
+                        {children}
                     </p>
                 </div>
             </div>

@@ -3,7 +3,6 @@ import { JobBox } from '../Job/JobBox';
 import { CustomTabPanel } from '@/components/TabMain';
 import { useTab } from '@/hooks/useTab';
 import { JobContainer } from '../Job/JobContainer';
-
 interface Job {
     image: string;
     jobName: string;
@@ -24,9 +23,6 @@ export const RenderImagesTab = ({ index, currentPage, currentCategoryUrls, value
 
     useEffect(() => {
         const handleResize = () => {
-/*             if (window.innerWidth <= 360) {
-                setItemsPerPage(1); //ou 1
-            }  else if >>*/
             if (window.innerWidth <= 768) {
                 setItemsPerPage(2);
             } else if (window.innerWidth <= 1280) {
