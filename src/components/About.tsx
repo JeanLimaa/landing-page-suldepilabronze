@@ -19,7 +19,7 @@ export default function About() {
                         id="ProfilePic"
                         className="rounded-xl"
                     />
-                    {/* <Image alt="" quality={100} width={100} height={100} src="https://file.rendit.io/n/1ve4xW8sP2zeW6e2f5lu.png" /> */}
+                   {/*  <Image alt="suely-imagem" quality={100} width={270} height={270} src="https://file.rendit.io/n/1ve4xW8sP2zeW6e2f5lu.png" className="rounded-xl" /> */}
                 </div>
                 <aside className="text-justify text-xl tracking-[0.4] text-[#535151] mt-3 w-2/3 max-md:w-full max-lg:text-lg">
                     <p className="pb-4">

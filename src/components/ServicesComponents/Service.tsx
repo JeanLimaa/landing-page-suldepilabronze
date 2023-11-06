@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-
 interface ServiceProps {
     src: string;
     serviceName: string;
@@ -11,10 +10,6 @@ export default function Service({children, src, serviceName}: ServiceProps){
 
     return (
         <div className="flex flex-col mt-10 gap-3 items-start w-[270px] max-lg:w-full max-[375px]:w-[80vw]">
-{/*             <img
-                src={src}
-                alt={serviceName}
-            /> */}
             <div className="w-full ">
                 <Image
                     src={src}

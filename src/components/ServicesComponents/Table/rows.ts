@@ -3,25 +3,25 @@ function createData(name: string, price: number) {
 }
 
 export const rows = [
-    createData('Cupcake', 303125),
-    createData('Donut', 453212),
-    createData('Eclair', 26122),
-    createData('Frozen yoghurt', 1592),
-    createData('Gingerbread', 3562),
-    createData('Honeycomb', 4032185),
+    createData('ExBronze1', 3031),
+    createData('Bronze2', 4532),
+    createData('Bronze3', 2612),
+    createData('Bronze4', 1592),
+    createData('Bronze5', 3562),
+    createData('Bronze6', 4032),
 ].sort((a, b) => (a.price < b.price ? -1 : 1));
 
 export const rowsDepil = [
-    createData('Depilação', 303125),
-    createData('Donut', 453212),
-    createData('Eclair', 26122),
+    createData('ExDepilação', 303),
+    createData('Depilação2', 453),
+    createData('Depilação3', 261),
 ].sort((a, b) => (a.price < b.price ? -1 : 1));
 
 export const rowsLimpeza = [
-    createData('Limpeza', 303125),
-    createData('Donut', 453212),
-    createData('Eclair', 26122),
-    createData('Frozen yoghurt', 1592),
-    createData('Gingerbread', 3562),
-    createData('Honeycomb', 4032185),
+    createData('ExLimpeza', 303),
+    createData('Limpeza2', 453),
+    createData('Limpeza3', 261),
+    createData('Limpeza4', 159),
+    createData('Limpeza5', 356),
+    createData('Limpeza6', 403),
 ].sort((a, b) => (a.price < b.price ? -1 : 1));

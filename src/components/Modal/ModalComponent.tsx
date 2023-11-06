@@ -10,7 +10,7 @@ interface ModalComponentProps {
   btnText: string,
   btnClassName?: string,
   btnColor?: 'error',
-  btnVariant: 'contained' | 'outlined'
+  btnVariant: 'contained' | 'text'
 }
 export default function ModalComponent({ children, btnText, btnClassName, btnVariant, btnColor }: ModalComponentProps) {
   const [open, setOpen] = useState(false);

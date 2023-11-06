@@ -24,9 +24,10 @@ export const RenderImagesTab = ({ index, currentPage, currentCategoryUrls, value
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 360) {
-                setItemsPerPage(1);
-            } else if (window.innerWidth <= 768) {
+/*             if (window.innerWidth <= 360) {
+                setItemsPerPage(1); //ou 1
+            }  else if >>*/
+            if (window.innerWidth <= 768) {
                 setItemsPerPage(2);
             } else if (window.innerWidth <= 1280) {
                 setItemsPerPage(3);

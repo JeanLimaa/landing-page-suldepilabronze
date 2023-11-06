@@ -1,8 +1,9 @@
 import Button from '@mui/material/Button';
 import About from './About';
 import { SocialMedia } from './SocialMedia';
+import Image from 'next/image';
 
-export default function HomeScreen() {
+const HomeScreen = () => {
     return (
         <>
             <section
@@ -27,15 +28,17 @@ export default function HomeScreen() {
                     </div>
                 </article>
                 <aside className='flex w-42 h-96 mt-16 max-md:mt-2'>
-                    <img src="/suely-cartaz.png" alt="imagem de suely" />
-                    {/* <Image src="/suely-cartaz.png"  width={380} height={300} quality={100} alt='Imagem Suely' /> */}
+                   {/*  <img src="/suely-cartaz.png" alt="imagem de suely" /> */}
+                     <Image src="/suely-cartaz.png"  width={380} height={380} quality={100} priority alt='Imagem Suely' className='w-full' />
                     {/*  <Image src="https://i.imgur.com/rdPlxTx.png"  width={100} height={100} quality={100} alt='Imagem Suely' className='w-full h-full'  /> */}
                 </aside>
                 <div className='absolute bottom-12 w-[67vw] max-xl:w-[80vw] max-lg:w-[85vw] max-md:w-[90vw] '>
                     <About />
                 </div>
             </section>
-            <section className="min-h-[50vh] max-md:min-h-[80vh]"></section>
+            <section className="min-h-[50vh] max-sm:min-h-[700px] max-[475px]:min-h-[600px]"></section>
         </>
     )
 }
+
+export default HomeScreen;

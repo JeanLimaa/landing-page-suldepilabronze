@@ -1,5 +1,4 @@
 'use client'
-import * as React from 'react';
 import { RenderImagesTab } from './RenderImagesTab';
 import Pagination from '@mui/material/Pagination';
 import { useTab } from '@/hooks/useTab';
